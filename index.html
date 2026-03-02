@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumiere Studio — Свадебное кино и событийные съёмки</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <!-- Blobs -->
+    <div class="blob blob-1" aria-hidden="true"></div>
+    <div class="blob blob-2" aria-hidden="true"></div>
+
+    <!-- Navbar -->
+    <header class="header" id="header">
+      <div class="header-inner">
+        <a href="#hero" class="logo">
+          <span class="logo-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+          </span>
+          <div class="logo-text">
+            <span class="logo-name">Lumiere Studio</span>
+            <span class="logo-tagline">Wedding & Event Films</span>
+          </div>
+        </a>
+
+        <nav class="nav-desktop">
+          <a href="#features">Преимущества</a>
+          <a href="#stats">Цифры</a>
+          <a href="#how">Как это работает</a>
+          <a href="#testimonials">Отзывы</a>
+          <a href="#pricing">Цены</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <a href="#cta" class="btn btn-primary btn-nav">Забронировать дату</a>
+
+        <button type="button" class="burger" id="burger" aria-label="Меню">
+          <svg class="burger-icon open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+          <svg class="burger-icon close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="drawer" id="drawer">
+        <a href="#features" class="drawer-link">Преимущества</a>
+        <a href="#stats" class="drawer-link">Цифры</a>
+        <a href="#how" class="drawer-link">Как это работает</a>
+        <a href="#testimonials" class="drawer-link">Отзывы</a>
+        <a href="#pricing" class="drawer-link">Цены</a>
+        <a href="#faq" class="drawer-link">FAQ</a>
+        <a href="#cta" class="btn btn-primary drawer-cta">Забронировать дату</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="hero" class="section hero" data-reveal>
+        <div class="hero-grid">
+          <div class="hero-content">
+            <span class="badge hero-badge">
+              <span class="badge-dot"></span>
+              Свадебное кино • Живые эмоции
+            </span>
+            <h1 class="hero-title">
+              Ваш <span class="gradient-text">свадебный день</span><br />
+              как авторский фильм, к которому вы будете возвращаться <span class="underline-text">снова и снова</span>.
+            </h1>
+            <p class="hero-desc">
+              Создаём кинематографичные свадебные и событийные фильмы — каждая эмоция, взгляд и движение собраны в цельную историю. Без шаблонов, без пафоса — только вы и ваше настоящее.
+            </p>
+            <div class="hero-buttons">
+              <a href="#pricing" class="btn btn-primary btn-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9.813 9.475.346-.15c1.4-.63 3.027-.12 3.897 1.196.402.61.356 1.332.157 1.927l-.149.344"/><path d="M16.434 16.44a2.1 2.1 0 0 1-2.97 2.97l-.461-.461c-.27-.27-.54-.54-.81-.81"/><path d="m16.206 7.678-.153.346c-.63 1.4-.12 3.027 1.196 3.897.61.402 1.332.356 1.927.157l.344-.149"/><path d="M4.705 4.706c-4.239 4.238-1.212 11.14 4.12 12.586 5.332 1.447 10.288-2.09 12.469-4.27 2.18-2.18 5.716-7.136 4.27-12.468-1.446-5.333-8.348-8.359-12.586-4.12Z"/></svg>
+                Забронировать дату
+              </a>
+              <a href="#testimonials" class="btn btn-ghost btn-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/></svg>
+                Смотреть шоу‑рил
+              </a>
+            </div>
+            <div class="hero-social-proof">
+              <div class="avatars">
+                <span class="avatar">AD</span>
+                <span class="avatar">MA</span>
+                <span class="avatar">EL</span>
+              </div>
+              <div class="social-text">
+                <span class="rating"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 4.9/5</span>
+                <span>по отзывам • 180+ свадеб</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-card glass-card card-hover">
+              <div class="hero-card-inner">
+                <div class="hero-card-header">
+                  <span class="chip"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m22 12-5 5"/><path d="m22 12-5-5 5-5"/></svg> Live Color Grade</span>
+                  <span class="rec">REC • 4K / 50fps</span>
+                </div>
+                <div class="hero-frame">
+                  <div class="hero-frame-inner">
+                    <div class="hero-frame-img"></div>
+                    <div class="hero-frame-overlay"></div>
+                    <div class="hero-frame-caption">
+                      <span class="chip"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9.813 9.475.346-.15c1.4-.63 3.027-.12 3.897 1.196.402.61.356 1.332.157 1.927l-.149.344"/></svg> Anna & Daniel</span>
+                      <p>Закат в горах, туманное утро и танцы до рассвета.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero-card-footer">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Монтируем от 10 дней</span>
+                  <span>Легальная музыка</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section id="features" class="section features" data-reveal>
+        <div class="section-header">
+          <span class="section-label">Почему пары выбирают нас</span>
+          <h2 class="section-title">Преимущества <span class="gradient-text">авторского подхода</span></h2>
+          <p class="section-desc">Не просто фиксируем события, а бережно собираем вашу историю в цельный визуальный роман.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature-card glass-card card-hover">
+            <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg></div>
+            <h3>Кинематографичная съёмка</h3>
+            <p>Многокамерная съёмка в 4K, мягкий свет и живые ракурсы — каждая эмоция как сцена из фильма.</p>
+          </article>
+          <article class="feature-card glass-card card-hover">
+            <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m22 12-5 5"/><path d="m22 12-5-5 5-5"/></svg></div>
+            <h3>Монтаж с ритмом истории</h3>
+            <p>Выстроенный сюжет, переходы, цветокор и саунд-дизайн под вашу индивидуальность.</p>
+          </article>
+          <article class="feature-card glass-card card-hover">
+            <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9.813 9.475.346-.15c1.4-.63 3.027-.12 3.897 1.196.402.61.356 1.332.157 1.927l-.149.344"/></svg></div>
+            <h3>Авторский цвет и стиль</h3>
+            <p>Фирменный тёплый оттенок, мягкий контраст — видео выглядит дорого и современно.</p>
+          </article>
+          <article class="feature-card glass-card card-hover">
+            <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></div>
+            <h3>Фокус на эмоциях</h3>
+            <p>Слёзы радости, смех друзей, тихие взгляды — ловим настоящие моменты.</p>
+          </article>
+          <article class="feature-card glass-card card-hover">
+            <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg></div>
+            <h3>Версии для соцсетей</h3>
+            <p>Вертикальные клипы для Instagram, Reels и TikTok — делитесь моментами уже на следующий день.</p>
+          </article>
+          <article class="feature-card glass-card card-hover">
+            <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <h3>Прозрачные сроки</h3>
+            <p>Черновой монтаж за 10–14 дней и полный комплект в оговорённые сроки без сдвигов.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Stats -->
+      <section id="stats" class="section stats" data-reveal>
+        <div class="section-divider"></div>
+        <div class="section-header">
+          <span class="section-label">Цифры за опытом</span>
+          <h2 class="section-title">Каждое <span class="gradient-text">событие</span> уникально</h2>
+          <p class="section-desc">Не гонимся за количеством — выбираем истории, к которым подходим максимально бережно.</p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card glass-card">
+            <span class="stat-value" data-target="180" data-suffix="+">0</span>
+            <span class="stat-label">Снятых свадеб</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-value" data-target="12" data-suffix="K">0</span>
+            <span class="stat-label">Часов материала</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-value" data-target="98" data-suffix="%">0</span>
+            <span class="stat-label">Удовлетворённость пар</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-value" data-target="9" data-suffix="">0</span>
+            <span class="stat-label">Городов по миру</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section id="how" class="section how" data-reveal>
+        <div class="section-header">
+          <span class="section-label">Как строится работа</span>
+          <h2 class="section-title">От первой заявки до <span class="gradient-text">финального фильма</span></h2>
+          <p class="section-desc">Прозрачный процесс без сюрпризов. Вы знаете, на каком этапе что происходит.</p>
+        </div>
+        <div class="steps">
+          <div class="step glass-card card-hover">
+            <div class="step-number">1</div>
+            <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg></div>
+            <h3>Созвон и бриф</h3>
+            <p>Обсуждаем ваш день, тайминг, площадку, референсы и настроение.</p>
+          </div>
+          <div class="step glass-card card-hover">
+            <div class="step-number">2</div>
+            <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/></svg></div>
+            <h3>Съёмочный день</h3>
+            <p>Незаметно присутствуем и ловим живые моменты.</p>
+          </div>
+          <div class="step glass-card card-hover">
+            <div class="step-number">3</div>
+            <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg></div>
+            <h3>Монтаж и магия</h3>
+            <p>Собираем историю, цвет, ритм. Превью, правки, финал.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section id="testimonials" class="section testimonials" data-reveal>
+        <div class="section-header">
+          <span class="section-label">Что говорят пары</span>
+          <h2 class="section-title">Отзывы <span class="gradient-text">с настоящими эмоциями</span></h2>
+          <p class="section-desc">Ценим доверие и строим долгие отношения с парами и организаторами.</p>
+        </div>
+        <div class="testimonials-scroll">
+          <article class="testimonial glass-card card-hover">
+            <div class="testimonial-header">
+              <span class="testimonial-avatar ad">AD</span>
+              <div>
+                <span class="testimonial-name">Анна & Дмитрий</span>
+                <span class="testimonial-role">Свадьба в Тбилиси</span>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>«Мы пересматриваем фильм каждые несколько месяцев и каждый раз плачем и смеёмся. Это наше маленькое кино.»</p>
+          </article>
+          <article class="testimonial glass-card card-hover">
+            <div class="testimonial-header">
+              <span class="testimonial-avatar ma">MA</span>
+              <div>
+                <span class="testimonial-name">Мария & Алексей</span>
+                <span class="testimonial-role">Свадьба в Санкт-Петербурге</span>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>«Никакого пафоса, только живые моменты. Видео переносит нас обратно в тот день — запах дождя, смех друзей.»</p>
+          </article>
+          <article class="testimonial glass-card card-hover">
+            <div class="testimonial-header">
+              <span class="testimonial-avatar el">EL</span>
+              <div>
+                <span class="testimonial-name">Event Studio Lumen</span>
+                <span class="testimonial-role">Организаторы событий</span>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>«Работать с командой — одно удовольствие. Результат всегда выше ожиданий наших клиентов.»</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" class="section pricing" data-reveal>
+        <div class="section-header pricing-header">
+          <div>
+            <span class="section-label">Прозрачные пакеты</span>
+            <h2 class="section-title">Три уровня <span class="gradient-text">вовлечённости</span></h2>
+          </div>
+          <div class="pricing-toggle-wrap">
+            <span class="toggle-label">Период</span>
+            <div class="pricing-toggle">
+              <button type="button" class="toggle-btn active" data-period="monthly">Месяц</button>
+              <button type="button" class="toggle-btn" data-period="yearly">Год <span class="discount">‑20%</span></button>
+              <span class="toggle-knob"></span>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card glass-card card-hover">
+            <h3>Базовый</h3>
+            <p class="price-desc">Тёплый компактный фильм о вашем дне.</p>
+            <div class="price-value"><span class="price-num" data-monthly="490" data-yearly="4900">490</span> ₽</div>
+            <span class="price-period">/ съёмка</span>
+            <ul class="price-features">
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Съёмка до 6 часов</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Фильм 4–6 минут</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Один оператор</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Базовый цветокор</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Онлайн + USB</li>
+            </ul>
+            <a href="#cta" class="btn btn-ghost btn-block">Выбрать пакет</a>
+          </article>
+          <article class="price-card glass-card card-hover price-popular">
+            <span class="popular-badge">Популярный</span>
+            <h3>Про</h3>
+            <p class="price-desc">Максимальное погружен
+<div class="price-value"><span class="price-num" data-monthly="790" data-yearly="7900">790</span> ₽</div>
+            <span class="price-period">/ съёмка</span>
+            <ul class="price-features">
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Съёмка полного дня (до 12 ч)</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Фильм 7–10 мин + тизер 60 сек</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 2 оператора</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Авторский цвет и саунд</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Клипы для Reels/TikTok</li>
+            </ul>
+            <a href="#cta" class="btn btn-primary btn-block">Выбрать пакет</a>
+          </article>
+          <article class="price-card glass-card card-hover">
+            <h3>Энтерпрайз</h3>
+            <p class="price-desc">Масштабные события, мультидневные свадьбы.</p>
+            <div class="price-value"><span class="price-num" data-monthly="1290" data-yearly="12900">1290</span> ₽</div>
+            <span class="price-period">/ съёмка</span>
+            <ul class="price-features">
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Съёмка 2+ дней</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Набор фильмов под форматы</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Команда операторов</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Дрон, стабилизаторы</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Индивидуальный график</li>
+            </ul>
+            <a href="#cta" class="btn btn-ghost btn-block">Выбрать пакет</a>
+          </article>
+        </div>
+      </section>
+<!-- FAQ -->
+      <section id="faq" class="section faq" data-reveal>
+        <div class="section-header">
+          <span class="section-label">Частые вопросы</span>
+          <h2 class="section-title">Ответы, которые <span class="gradient-text">снимают тревогу</span></h2>
+          <p class="section-desc">Не нашли ответ — напишите нам, соберём индивидуальный разбор.</p>
+        </div>
+        <div class="faq-grid">
+          <details class="faq-item glass-card card-hover">
+            <summary>За сколько заранее бронировать дату?</summary>
+            <p>Оптимально — за 3–6 месяцев. В горячий сезон даты разбирают быстро, поэтому лучше написать заранее.</p>
+          </details>
+          <details class="faq-item glass-card card-hover">
+            <summary>Работаете в других городах и странах?</summary>
+            <p>Да, путешествуем по миру. Перелёт и проживание обсуждаются индивидуально.</p>
+          </details>
+          <details class="faq-item glass-card card-hover">
+            <summary>Сколько длится итоговое видео?</summary>
+            <p>Обычно 6–10 минут + тизер до 60 секунд для соцсетей. Формат подбираем под ваш сценарий.</p>
+          </details>
+          <details class="faq-item glass-card card-hover">
+            <summary>Как происходит оплата и резерв?</summary>
+            <p>Предоплата 30% для фиксации даты. Остаток — по завершении монтажа.</p>
+          </details>
+          <details class="faq-item glass-card card-hover">
+            <summary>Можно ли внести правки после монтажа?</summary>
+            <p>Да, включён один раунд правок. Референсы до съёмки помогают попасть в настроение.</p>
+          </details>
+          <details class="faq-item glass-card card-hover">
+            <summary>Работаете с фотографом?</summary>
+            <p>Конечно. Легко встраиваемся в команду дня — фотограф, ведущий, координатор.</p>
+          </details>
+        </div>
+      </section>
+<!-- CTA -->
+      <section id="cta" class="section cta" data-reveal>
+        <div class="cta-banner">
+          <div class="cta-content">
+            <span class="section-label">Готовы сохранить ваш день</span>
+            <h2>Забронируйте <span class="underline-text">дату съёмки</span> — поможем превратить праздник в фильм</h2>
+            <p>Оставьте ссылку или напишите в мессенджер — ответим в течение нескольких часов.</p>
+          </div>
+          <div class="cta-actions">
+            <label class="cta-input-wrap">
+              <span>Instagram / сайт</span>
+              <input type="text" placeholder="@ваш.nickname или ссылка" />
+            </label>
+            <div class="cta-social-wrap">
+              <span>Написать сейчас</span>
+              <div class="cta-social">
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="btn btn-social">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                  Instagram
+                </a>
+                <a href="https://t.me" target="_blank" rel="noopener" class="btn btn-social">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                  Telegram
+                </a>
+                <a href="https://wa.me" target="_blank" rel="noopener" class="btn btn-social">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+<!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#hero" class="logo">
+            <span class="logo-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg></span>
+            <div class="logo-text">
+              <span class="logo-name">Lumiere Studio</span>
+              <span class="logo-tagline">Wedding & Event Films</span>
+            </div>
+          </a>
+          <p>Создаём тёплые и честные истории о любви и праздниках. Видео, к которому хочется возвращаться.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-col">
+            <h4>Навигация</h4>
+            <a href="#hero">В начало</a>
+            <a href="#features">Преимущества</a>
+            <a href="#pricing">Пакеты</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div class="footer-col">
+            <h4>Съёмка</h4>
+            <span>Свадебные фильмы</span>
+            <span>Love Story</span>
+            <span>Семейные события</span>
+            <span>Корпоративы</span>
+          </div>
+          <div class="footer-col">
+            <h4>Инфо</h4>
+            <span>О студии</span>
+<span>Условия</span>
+            <span>Прайс</span>
+          </div>
+          <div class="footer-col">
+            <h4>Контакты</h4>
+            <span>hello@lumiere.studio</span>
+            <span>@lumiere.wedding</span>
+            <span>Telegram / WhatsApp</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Lumiere Studio. Все права защищены.</span>
+        <span>Создано с любовью к настоящим историям.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
